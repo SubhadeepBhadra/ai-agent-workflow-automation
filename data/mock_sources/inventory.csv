@@ -1,0 +1,11 @@
+sku,product_name,category,current_stock,minimum_threshold,target_stock,unit_cost,supplier
+SKU-101,Ergonomic Office Chair,Furniture,12,25,50,120.0,ErgoWorks
+SKU-102,Mechanical Keyboard RGB,Electronics,8,15,40,65.0,KeyTech
+SKU-103,UltraWide Monitor 34-inch,Electronics,4,10,20,340.0,VisionPro
+SKU-104,Noise Cancelling Headphones,Audio,45,20,60,95.0,SoundMax
+SKU-105,USB-C Multiport Dock,Accessories,6,30,75,28.5,ConnectHub
+SKU-106,Standing Desk Frame,Furniture,18,15,35,180.0,ErgoWorks
+SKU-107,Wireless Vertical Mouse,Accessories,3,20,50,22.0,KeyTech
+SKU-108,HD Webcam 1080p,Electronics,28,20,50,45.0,VisionPro
+SKU-109,Acoustic Desk Divider,Furniture,2,12,30,55.0,OfficeSpace
+SKU-110,LED Desk Lamp with Qi Charger,Accessories,50,25,60,19.5,BrightLife

@@ -1,0 +1,83 @@
+{
+  "ORD-1001": {
+    "order_id": "ORD-1001",
+    "customer_email": "sarah.connor@cyberdyne.io",
+    "order_date": "2026-10-02T14:30:00Z",
+    "status": "In Transit",
+    "items": [
+      {
+        "sku": "SKU-101",
+        "name": "Ergonomic Office Chair",
+        "qty": 1,
+        "price": 189.99
+      },
+      {
+        "sku": "SKU-107",
+        "name": "Wireless Vertical Mouse",
+        "qty": 1,
+        "price": 39.99
+      }
+    ],
+    "total_amount": 229.98,
+    "shipment": {
+      "carrier": "FedEx Express",
+      "tracking_number": "FDX-88392019482",
+      "shipped_at": "2026-10-03T09:15:00Z",
+      "estimated_delivery": "2026-10-08T18:00:00Z",
+      "current_location": "Memphis Sorting Hub, TN",
+      "last_checkpoint": "Departed FedEx facility"
+    }
+  },
+  "ORD-1002": {
+    "order_id": "ORD-1002",
+    "customer_email": "alex.chen@innovate.tech",
+    "order_date": "2026-10-05T10:15:00Z",
+    "status": "Processing",
+    "items": [
+      {
+        "sku": "SKU-103",
+        "name": "UltraWide Monitor 34-inch",
+        "qty": 2,
+        "price": 499.99
+      }
+    ],
+    "total_amount": 999.98,
+    "shipment": {
+      "carrier": "UPS Ground",
+      "tracking_number": "Pending Assignment",
+      "shipped_at": null,
+      "estimated_delivery": "2026-10-11T17:00:00Z",
+      "current_location": "Warehouse Fulfillment Center, Austin TX",
+      "last_checkpoint": "Pick & Pack in Progress"
+    }
+  },
+  "ORD-1003": {
+    "order_id": "ORD-1003",
+    "customer_email": "elena.rostova@designworks.com",
+    "order_date": "2026-09-28T16:45:00Z",
+    "status": "Delivered",
+    "items": [
+      {
+        "sku": "SKU-102",
+        "name": "Mechanical Keyboard RGB",
+        "qty": 1,
+        "price": 109.99
+      },
+      {
+        "sku": "SKU-110",
+        "name": "LED Desk Lamp with Qi Charger",
+        "qty": 1,
+        "price": 49.99
+      }
+    ],
+    "total_amount": 159.98,
+    "shipment": {
+      "carrier": "DHL Express",
+      "tracking_number": "DHL-4491028301",
+      "shipped_at": "2026-09-29T11:00:00Z",
+      "estimated_delivery": "2026-10-01T14:00:00Z",
+      "current_location": "Delivered to Front Porch - Signed by E. Rostova",
+      "last_checkpoint": "Delivered"
+    }
+  }
+}

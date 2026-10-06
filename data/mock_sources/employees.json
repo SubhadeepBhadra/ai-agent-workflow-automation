@@ -1,0 +1,82 @@
+[
+  {
+    "employee_id": "EMP-01",
+    "name": "David Kim",
+    "role": "Senior Backend Developer",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "System Architecture",
+      "Docker"
+    ],
+    "active_tasks_count": 1,
+    "capacity_percentage": 30,
+    "is_available": true,
+    "performance_rating": 4.9
+  },
+  {
+    "employee_id": "EMP-02",
+    "name": "Maria Garcia",
+    "role": "Full Stack Engineer",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Python",
+      "GraphQL"
+    ],
+    "active_tasks_count": 4,
+    "capacity_percentage": 95,
+    "is_available": false,
+    "performance_rating": 4.8
+  },
+  {
+    "employee_id": "EMP-03",
+    "name": "Liam Thorne",
+    "role": "DevOps & Cloud Engineer",
+    "skills": [
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "active_tasks_count": 2,
+    "capacity_percentage": 50,
+    "is_available": true,
+    "performance_rating": 4.7
+  },
+  {
+    "employee_id": "EMP-04",
+    "name": "Priya Patel",
+    "role": "Lead Data & AI Engineer",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "LangChain",
+      "LLMs",
+      "Pandas"
+    ],
+    "active_tasks_count": 2,
+    "capacity_percentage": 45,
+    "is_available": true,
+    "performance_rating": 4.95
+  },
+  {
+    "employee_id": "EMP-05",
+    "name": "Ethan Vance",
+    "role": "Frontend Specialist",
+    "skills": [
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "UI/UX",
+      "Web Accessibility"
+    ],
+    "active_tasks_count": 5,
+    "capacity_percentage": 100,
+    "is_available": false,
+    "performance_rating": 4.6
+  }
+]

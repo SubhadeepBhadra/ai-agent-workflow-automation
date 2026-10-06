@@ -1,0 +1,9 @@
+product_id,sku,name,category,brand,price
+P001,SKU-201,Wireless Noise Cancelling Over-Ear Headphones Black,Audio,AcoustiQ,149.99
+P002,SKU-201,Wireless Noise Cancelling Over-Ear Headphones Black (Duplicate SKU),Audio,AcoustiQ,149.99
+P003,SKU-203,Wireless Noise Canceling Over Ear Headphone - Midnight Black,Audio,AcoustiQ,154.99
+P004,SKU-204,Pro Aluminium Laptop Stand Foldable Ergonomic,Accessories,DeskCraft,39.99
+P005,SKU-205,Aluminum Foldable Laptop Riser Stand Pro,Accessories,DeskCraft,42.0
+P006,SKU-206,Mechanical Gaming Keyboard Tenkeyless Blue Switch,Keyboards,Vortex,89.99
+P007,SKU-207,4K Ultra HD Streaming Webcam with Privacy Shutter,Electronics,OpticLens,79.99
+P008,SKU-207,4K Ultra HD Streaming Webcam w/ Privacy Shutter (Duplicate SKU),Electronics,OpticLens,79.99

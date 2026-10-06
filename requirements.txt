@@ -1,0 +1,19 @@
+# Core Framework & Agent Execution
+pydantic>=2.0.0
+openpyxl>=3.1.0
+pandas>=2.0.0
+
+# Terminal UI & Visualization
+rich>=13.0.0
+
+# Web Dashboard UI & REST API
+streamlit>=1.30.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Optional LLM Integration (OpenAI, Groq, Anthropic, LangChain)
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Testing & Quality Assurance
+pytest>=7.0.0
