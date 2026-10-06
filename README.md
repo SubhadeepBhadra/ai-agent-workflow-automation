@@ -167,62 +167,128 @@ ai-agent-workflow-automation/
 
 ---
 
-## 🚀 Installation & Quickstart
+## 🚀 Installation & Quickstart Guide
 
-### Prerequisites
-- Python 3.10 or higher
-- Git
+### 📋 Prerequisites
+- **Python 3.10, 3.11, or 3.12** installed on your system.
+- **Git** installed.
+- *(Optional)* OpenAI, Groq, or Anthropic API key if you wish to use remote LLMs (the system runs 100% offline out-of-the-box using the deterministic hybrid engine).
 
-### 1. Clone & Set Up Environment
+---
+
+### 1️⃣ Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/SubhadeepBhadra/ai-agent-workflow-automation.git
 cd ai-agent-workflow-automation
-
-# Create and activate virtual environment
-python -m venv venv
-# On Windows:
-.\venv\Scripts\activate
-# On Linux/macOS:
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
 ```
+
+---
+
+### 2️⃣ Create & Activate Virtual Environment
+
+**On Windows (PowerShell):**
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+**On Windows (Command Prompt - CMD):**
+```cmd
+python -m venv venv
+venv\Scripts\activate.bat
+```
+
+**On macOS & Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+---
+
+### 4️⃣ Environment Configuration (Optional)
+If you want to configure custom data paths or enable cloud LLM providers (e.g. OpenAI / Groq), copy the sample environment file:
+
+**On Windows (PowerShell):**
+```powershell
+Copy-Item .env.example .env
+```
+
+**On macOS / Linux / Bash:**
+```bash
+cp .env.example .env
+```
+*(Open `.env` and enter your API keys if desired; otherwise, leave as default for local hybrid execution).*
+
+---
+
+### 5️⃣ Verify Installation (Quick Health Check)
+Run the automated test suite to verify that all components, workflows, and tools are operating properly:
+```bash
+python -m pytest tests/test_all_workflows.py -v
+```
+*Expected: `22 passed in < 1.0s`*
 
 ---
 
 ## 🖥️ Running the Application
 
-### 1. Interactive Streamlit Web Dashboard
-Launch the web interface to test queries, inspect step-by-step traces, view data sources, and build workflows:
+### 🌐 1. Interactive Streamlit Web Dashboard (Recommended)
+Launch the graphical interface to interactively test queries, view step execution traces, inspect source data, and build dynamic workflows:
 ```bash
-streamlit run src/ui/app.py
+python -m streamlit run src/ui/app.py
 ```
-*Access in browser at: `http://localhost:8501`*
+👉 Open your browser at **`http://localhost:8501`**
 
-### 2. Rich Terminal CLI
-Run queries or benchmark all workflows directly from the terminal:
+---
+
+### 💻 2. Rich Terminal CLI
+You can run the agent in multiple CLI modes directly from your terminal:
 
 ```bash
-# Run full 10/10 automated evaluation benchmark
+# 1. Run full 10/10 automated benchmark suite across all Excel workflows
 python src/main.py --test-all
 
-# Run a single query
+# 2. Execute a single natural language business query
 python src/main.py --request "Which products need restocking?"
+python src/main.py --request "Where is order ORD-1001?"
+python src/main.py --request "Find products where vendor price differs by more than 10%."
 
-# Demonstrate 11th workflow extensibility
+# 3. Demonstrate 11th workflow extensibility (Zero core engine code changes)
 python src/main.py --demo-extensibility
 
-# Interactive terminal REPL
+# 4. List all workflows loaded dynamically from Excel
+python src/main.py --list-workflows
+
+# 5. Interactive Chat REPL mode
 python src/main.py
 ```
 
-### 3. FastAPI REST API Server
-Start the production-ready REST API server:
+---
+
+### 🔌 3. FastAPI Production REST API Server
+Start the REST API server for programmatic integration:
 ```bash
-python src/api/server.py
+python -m uvicorn src.api.server:app --host 127.0.0.1 --port 8000 --reload
 ```
-*Interactive Swagger documentation at: `http://localhost:8000/docs`*
+- **REST API Base URL:** `http://localhost:8000`
+- **Interactive Swagger Docs:** `http://localhost:8000/docs`
+- **Alternative ReDoc:** `http://localhost:8000/redoc`
+
+#### Quick API Test with cURL:
+```bash
+curl -X POST "http://127.0.0.1:8000/api/execute" \
+     -H "Content-Type: application/json" \
+     -d "{\"user_request\": \"Which products need restocking?\"}"
+```
 
 ---
 
