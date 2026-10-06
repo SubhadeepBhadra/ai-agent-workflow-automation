@@ -327,12 +327,3 @@ tests/test_all_workflows.py::test_extensibility_11th_workflow PASSED     [100%]
 
 ============================= 22 passed in 0.87s ==============================
 ```
-
----
-
-## 🎥 Loom Video Walkthrough
-
-A structured recording script and talking points are available in [`LOOM_WALKTHROUGH.md`](./LOOM_WALKTHROUGH.md).
-
-- **Submission Loom Link:** *`[Add your Loom video URL here]`*
-- **GitHub Repository Link:** [https://github.com/SubhadeepBhadra/ai-agent-workflow-automation](https://github.com/SubhadeepBhadra/ai-agent-workflow-automation)
